@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: #121417ff;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #252d37ff;
+  width: 24rem;
+  height: 20rem;
+  border-radius: 1.3rem;
+  padding: 1.8rem;
+}
+
+.starImage {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #2d3742;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-top: 1.7rem;
+  gap: 0.8rem;
+}
+
+.content h2 {
+  font-size: 1.3rem;
+}
+.content p {
+  max-width: 100%;
+  font-size: 0.8rem;
+  color: #959eacff;
+  line-height: 1.2rem;
+}
+.RatingNumber_Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Number {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #2d3742;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #959eacff;
+}
+.submitButton {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 1.3rem;
+  background-color: #fb7413ff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}

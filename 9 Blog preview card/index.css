@@ -1,0 +1,96 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  width: 350px;
+  max-width: 385px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4%;
+  border: 2px solid black;
+  padding: 18px;
+  box-shadow: 10px 10px black;
+}
+
+#courseImg {
+  width: 100%;
+  border-radius: 3.8%;
+}
+
+.learningTag {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  padding: 8px;
+  border-radius: 4px;
+  min-width: 5em;
+  text-align: center;
+  margin-top: 1.5em;
+  font-weight: 800;
+  font-size: 0.8em;
+}
+
+.userprofile {
+  display: flex;
+  align-items: center;
+}
+.userprofile img {
+  width: 40px;
+  height: 40px;
+}
+.userprofile h4 {
+  margin-left: 10px;
+  font-weight: 800;
+  font-size: 14px;
+}
+p {
+  max-width: 375px;
+  line-height: 1.5em;
+  color: hsl(0, 0%, 42%);
+}
+
+h5 {
+  color: hsl(0, 0%, 42%);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+/* Variable Font: Normal */
+@font-face {
+  font-family: "Figtree";
+  src: url("fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Variable Font: Italic */
+@font-face {
+  font-family: "Figtree";
+  src: url("fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* Static Font: ExtraBold */
+@font-face {
+  font-family: "FigtreeExtraBold";
+  src: url("fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Static Font: Medium */
+@font-face {
+  font-family: "FigtreeMedium";
+  src: url("fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}

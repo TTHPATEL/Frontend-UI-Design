@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.card {
+  width: 100%;
+  max-width: 68rem;
+  height: 25rem;
+  background-color: hsl(244, 37%, 16%);
+  display: flex;
+  color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.leftbox {
+  width: 50%;
+}
+
+.rightbox {
+  /* width: 50%; */
+  position: relative;
+  overflow: hidden;
+}
+.rightbox::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsl(277, 64%, 61%, 0.4);
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.leftbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  max-width: 32rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+.highlightedHeading {
+  color: hsl(277, 64%, 61%);
+  font-weight: 700;
+}
+
+.leftContent {
+  width: 85%;
+  height: 80%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftContent p {
+  width: 82%;
+  margin-top: 1.9rem;
+  line-height: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bottom_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 5rem;
+}
+.mainspan {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.descspan {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media (max-width: 876px) {
+  .card {
+    flex-direction: column-reverse;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .leftbox,
+  .rightbox {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .leftContent {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    max-width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .leftContent p {
+    width: 100%;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 0.95rem;
+  }
+  .bottom_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .mainspan {
+    display: block;
+  }
+  .box {
+    width: auto;
+  }
+}

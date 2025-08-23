@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="container1">
+        <h3 id="resultheading">Your Result</h3>
+        <div class="circleResult">
+          <div class="marknumber">76</div>
+          <div class="total">of 100</div>
+        </div>
+        <h3 id="greatHeading">Great</h3>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="container2">
+        <h3>Summary</h3>
+        <div class="resultdiv">
+          <div id="result1" class="boxCategory">
+            <div class="resultcategory" id="resultcategorytext1">
+              <img src="./assets/images/icon-reaction.svg" alt="" />
+              <b>Reaction</b>
+            </div>
+            <div class="markscategory"><span><b>80</b> <span class="outof100">/ 100</span></div>
+          </div>
+          <div id="result2" class="boxCategory">
+            <div class="resultcategory" id="resultcategorytext2">
+              <img src="./assets/images/icon-memory.svg" alt="" />
+              <b>Memory</b>
+            </div>
+            <div class="markscategory"><span><b>92</b> <span class="outof100">/ 100</span></div>
+          </div>
+          <div id="result3" class="boxCategory">
+            <div class="resultcategory" id="resultcategorytext3">
+              <img src="./assets/images/icon-verbal.svg" alt="" />
+              <b>Verbal</b>
+            </div>
+            <div class="markscategory"><span><b>61</b> <span class="outof100">/ 100</span></div>
+          </div>
+          <div id="result4" class="boxCategory">
+            <div class="resultcategory" id="resultcategorytext4">
+              <img src="./assets/images/icon-visual.svg" alt="" />
+              <b>Visual</b>
+            </div>
+            <div class="markscategory"><span><b>72</b> <span class="outof100">/ 100</span></div>
+          </div>
+       
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
