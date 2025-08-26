@@ -21,6 +21,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 #Heading1 {
@@ -115,4 +116,23 @@ img {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
+}
+
+@media (max-width: 378px) {
+  /* .MAIN_Item_Container {
+    grid-template-columns: repeat(auto-fit, minmax(315px, 315px));
+  } */
+  .MAIN_Item_Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Main_Container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
 }
