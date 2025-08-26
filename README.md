@@ -15,7 +15,6 @@ It serves as a portfolio of responsive, clean, and interactive designs created w
 ## Tech Stack:
 - **HTML5** – semantic and accessible structure 🏗️  
 - **CSS3** – modern styling with responsive layouts ✨  
-- **Minimal JavaScript** – used only where necessary ⚡  
 
 ## Projects Included:
 - Four Card Feature Section 📑  
