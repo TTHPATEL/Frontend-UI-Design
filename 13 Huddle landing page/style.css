@@ -143,5 +143,6 @@ footer {
 
   button {
     min-width: 50%;
+    min-height: 2.2em;
   }
 }
