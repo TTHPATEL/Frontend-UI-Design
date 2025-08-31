@@ -118,10 +118,7 @@ img {
   grid-row-end: 3;
 }
 
-@media (max-width: 378px) {
-  /* .MAIN_Item_Container {
-    grid-template-columns: repeat(auto-fit, minmax(315px, 315px));
-  } */
+@media (max-width: 426px) {
   .MAIN_Item_Container {
     display: flex;
     flex-direction: column;
@@ -133,6 +130,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding-block: 3em;
+  }
+  #Heading1,
+  #Heading2,
+  #Heading_Desc {
+    max-width: 100%;
+  }
+
+  #Heading1,
+  #Heading2 {
+    font-size: 6vw;
   }
 }
