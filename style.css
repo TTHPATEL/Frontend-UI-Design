@@ -22,7 +22,7 @@ body {
   /* background-color: hsl(0, 0%, 100%); */
   background-color: hsl(217, 54%, 11%);
 
-  padding: 50px;
+  padding: 50px 50px 25px 50px;
 
   display: flex;
   flex-direction: column;
@@ -214,4 +214,31 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: rgba(255, 255, 255);
+}
+footer {
+  padding-inline: 10em;
+  /* margin-top: -1em; */
+}
+footer i {
+  font-size: 1.5em;
+}
+.socail_media {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.linkedin p {
+  display: inline-block;
+}
+.small_size {
+  font-size: 0.9em;
 }

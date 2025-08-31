@@ -106,7 +106,8 @@ footer {
 }
 
 .social_media_logo:hover {
-  display: none;
+  /* display: none; */
+  cursor: pointer;
 }
 
 @media (max-width: 773px) {
