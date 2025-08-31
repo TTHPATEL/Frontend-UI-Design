@@ -766,4 +766,35 @@ body {
     top: 10%;
     font-size: 1.2em;
   }
+
+  /* FOOTER SECTION */
+
+  .middle_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input_layout input {
+    max-width: 60%;
+  }
+  .news_letter_card {
+    max-width: 100%;
+  }
+  .footer_link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0em;
+    padding-top: 1em;
+    gap: 2rem;
+  }
+  .category h4 {
+  }
+
+  .social_media_layout {
+    padding-top: 1.4em;
+  }
+  .social_media_layout i {
+    font-size: 1.6em;
+  }
 }
