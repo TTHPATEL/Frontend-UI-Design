@@ -133,13 +133,13 @@ input:invalid ~ .error_icon {
 
   .left_container {
     padding: 0rem;
+    gap: 3em;
   }
   .text_container {
     width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
   }
 
   #weare {
@@ -156,6 +156,9 @@ input:invalid ~ .error_icon {
 
   .hero_img_desktop {
     display: block;
+  }
+  .hero_img_desktop img {
+    width: 100%;
   }
   .logo img {
     padding-left: 20px;
