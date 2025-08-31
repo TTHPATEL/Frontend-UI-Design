@@ -218,13 +218,16 @@ a {
 
 .contact_container {
   display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  gap: 1em;
   justify-content: space-around;
   font-size: 0.9em;
   font-weight: 400;
   color: rgba(255, 255, 255);
 }
 footer {
-  padding-inline: 10em;
+  padding-inline: 10vw;
   /* margin-top: -1em; */
 }
 footer i {
