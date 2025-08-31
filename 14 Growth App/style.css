@@ -135,9 +135,6 @@ body {
   line-height: 1.2em;
   padding: 0vw 3.7vw;
 }
-.hero_video_container button {
-  /* margin-top: -4em; */
-}
 
 .video_hr_class {
   display: none;
@@ -148,7 +145,8 @@ body {
   background-color: black;
   margin-top: 1em;
   color: white;
-  padding: 4vw 2vw 4.5vw 4.5vw;
+  /* padding: 4vw 2vw 4.5vw 4.5vw; */
+  padding: 4vw 2vw 4.5vw 2vw;
 }
 
 .hero_test_container {
@@ -224,7 +222,7 @@ body {
 .title {
   display: flex;
   flex-direction: column;
-  gap: 0.7em;
+  gap: 1em;
 }
 .title h1 {
   font-size: 3em;
@@ -263,7 +261,7 @@ body {
   flex-direction: column;
   gap: 0.8em;
 }
-.top_side h5 {
+.top_side h3 {
   font-size: 2.2em;
   font-weight: 500;
 }
@@ -617,7 +615,7 @@ body {
   #burger_menu {
     display: block;
   }
-  /* SECTION 1 */
+  /* HERO SECTION 1 */
   .hero_container {
     padding-top: 5em;
     padding-bottom: 2.5em;
@@ -642,7 +640,7 @@ body {
     flex-direction: column;
     margin-top: 1em;
   }
-  /* SECTION 2 */
+  /* VIDEO SECTION 2 */
   .hero_video_container {
     padding-inline: 4vw;
     justify-content: space-evenly;
@@ -675,6 +673,7 @@ body {
   /* SECTION 3 TESTIMONIAL */
   #hero_testimonials {
     margin-top: 0em;
+    padding-inline: 4vw;
   }
 
   .hero_test_container {
@@ -705,15 +704,31 @@ body {
   /* PRICING SECTION */
 
   .hero_pricing_container {
-    padding-top: 4em;
+    padding-top: 3.5em;
     padding-bottom: 3em;
+    gap: 4em;
   }
 
   .pricing_table_Container {
     flex-direction: column;
     gap: 3em;
   }
+  .title h1 {
+    font-size: 2.25em;
+  }
 
+  .top_side h3 {
+    font-size: 1.75em;
+  }
+  .premium_title h6 {
+    font-size: 1em;
+  }
+  .free_title h3 {
+    font-size: 1.75em;
+  }
+  .free_title h6 {
+    font-size: 0.75em;
+  }
   .left_table {
     max-width: 100%;
     padding-inline: 1.5em;
@@ -733,5 +748,22 @@ body {
 
   .bottom_desc {
     text-align: center;
+  }
+  /* FAQ SECTION */
+
+  .faq_container {
+    padding-inline: 4vw;
+    margin-top: 10vw;
+  }
+  .faq_container h1 {
+    font-size: 2em;
+    letter-spacing: -1px;
+  }
+  .faq_menu {
+    max-width: 100%;
+  }
+  .faq_group_quest i {
+    top: 10%;
+    font-size: 1.2em;
   }
 }
