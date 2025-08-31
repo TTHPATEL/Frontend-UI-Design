@@ -24,7 +24,7 @@
         </a>
       </div>
       <div class="main_menu">
-        <ul>
+        <ul class="active" id="menu_ul_list">
           <li><a href="#hero_video"> Features </a></li>
           <li><a href="#hero_testimonials"> About us </a></li>
           <li><a href="#hero_pricing"> Blog </a></li>
@@ -32,7 +32,9 @@
             <button><a href="#hero_faq">Login</a></button>
           </li>
         </ul>
-        <img id="burger_menu" src="./images/Burger_menu.svg" alt="" />
+        <a href="#" id="burger_menu_toggle">
+          <img id="burger_menu" src="./images/Burger_menu.svg" alt=""
+        /></a>
       </div>
     </nav>
     <section id="hero">
@@ -390,5 +392,12 @@
         <small>© 2025 Growth, All rights reserved</small>
       </div>
     </section>
+    <script>
+      const burger_menu_toggle = document.getElementById("burger_menu_toggle");
+      const menu_ul_list = document.getElementById("menu_ul_list");
+      burger_menu_toggle.addEventListener("click", () => {
+        menu_ul_list.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

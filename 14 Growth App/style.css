@@ -50,7 +50,7 @@ body {
 
 .hero_container {
   /* padding: 2.5vw 5vw; */
-  padding: 5vw 5vw 4vw 5vw;
+  padding: 2.5vw 5vw 4vw 5vw;
   display: flex;
   flex-direction: column;
   gap: 1.4em;
@@ -583,9 +583,33 @@ body {
 }
 
 @media (max-width: 426px) {
-  .main_menu ul {
-    display: none;
+  .navbar {
+    position: relative;
+    overflow: initial;
   }
+
+  .main_menu ul {
+    /* display: none; */
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+  }
+  .main_menu ul.active {
+    left: 0;
+  }
+
+  .main_menu ul li {
+    padding-block: 0.8em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #burger_menu {
     display: block;
   }
