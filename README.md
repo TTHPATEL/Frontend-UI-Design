@@ -6,7 +6,7 @@ This project is a **frontend showcase** that brings together multiple modern UI 
 It serves as a portfolio of responsive, clean, and interactive designs created with **HTML** and **CSS**.
 
 ## Features:
-- Explore **12+ UI components & landing pages** 🎨  
+- Explore **13+ UI components & landing pages** 🎨  
 - **Preview images with hover effect** before visiting each project 🖼️  
 - **Direct links** to live demos of every design 🔗  
 - Responsive grid layout for easy browsing 📱💻  
@@ -17,6 +17,8 @@ It serves as a portfolio of responsive, clean, and interactive designs created w
 - **CSS3** – modern styling with responsive layouts ✨  
 
 ## Projects Included:
+
+- Growth App Landing Page 💻  
 - Four Card Feature Section 📑  
 - Results Summary Component 📊  
 - Interactive Rating Component ⭐  
