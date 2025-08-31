@@ -139,6 +139,9 @@ body {
   /* margin-top: -4em; */
 }
 
+.video_hr_class {
+  display: none;
+}
 /* SECTION 3 */
 #hero_testimonials {
   height: calc(auto - 16px);
@@ -329,6 +332,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+  overflow: hidden;
 }
 
 .top_side h3 {
@@ -654,5 +658,80 @@ body {
 
   .hero_video_container button {
     width: 100%;
+  }
+  /* HORIZONTAL LINE FOR PARTITION */
+  .video_hr_class {
+    display: flex;
+    padding: 0vw 10vw;
+    background-color: black;
+    justify-content: center;
+  }
+  #video_end_table_hr {
+    border: none;
+    border: 1px solid #494949;
+    width: 1000%;
+  }
+
+  /* SECTION 3 TESTIMONIAL */
+  #hero_testimonials {
+    margin-top: 0em;
+  }
+
+  .hero_test_container {
+    padding-top: 11vw;
+  }
+
+  .hero_test_container h1 {
+    font-size: 2em;
+    max-width: 100%;
+  }
+
+  .testimonial_card_container {
+    flex-direction: column;
+  }
+
+  .testimonial_card {
+    flex: 0 0 22vw;
+    background-color: white;
+    color: black;
+    border-radius: 0.8em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+  }
+
+  /* PRICING SECTION */
+
+  .hero_pricing_container {
+    padding-top: 4em;
+    padding-bottom: 3em;
+  }
+
+  .pricing_table_Container {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .left_table {
+    max-width: 100%;
+    padding-inline: 1.5em;
+    padding-bottom: 2.2em;
+  }
+
+  #PRICING_get_start_btn {
+    padding: 3.5vw 0vw;
+    font-size: 1em;
+  }
+
+  .right_table {
+    max-width: 100%;
+    padding-inline: 1.5em;
+    padding-bottom: 2.2em;
+  }
+
+  .bottom_desc {
+    text-align: center;
   }
 }
