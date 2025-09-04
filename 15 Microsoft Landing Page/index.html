@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Microsoft -AI, Cloud Landing Page</title>
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="nav_container">
+        <div class="left_menu_list">
+          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+          <div class="left_menu_item_text">
+            <div class="left_menu_item"><p>Microsoft 365</p></div>
+            <div class="left_menu_item"><p>Teams</p></div>
+            <div class="left_menu_item"><p>Copilot</p></div>
+            <div class="left_menu_item"><p>Windows</p></div>
+            <div class="left_menu_item"><p>Surface</p></div>
+            <div class="left_menu_item"><p>Microsoft</p></div>
+            <div class="left_menu_item"><p>Xbox</p></div>
+            <div class="left_menu_item"><p>Support</p></div>
+          </div>
+        </div>
+        <div class="right_menu_list">
+          <div class="right_menu_item">
+            <p>All Microsoft</p>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="right_menu_item">
+            <p>Search</p>
+            <img src="./images/search_icon.png" alt="" />
+          </div>
+          <div class="right_menu_item">
+            <p>Cart</p>
+            <i class="ri-shopping-cart-line"></i>
+          </div>
+          <div class="avatar_div">
+            <p>Tapasvi</p>
+            <img src="./images/MEEE.png" alt="" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="section_1">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <div class="slide_text">
+                <h3>Achieve the extraordinary</h3>
+                <p>
+                  Microsoft 365 delivers cloud storage, security and Microsoft
+                  Copilot in your favourite apps - all in one plan.
+                </p>
+                <button>Shop Microsoft 365</button>
+              </div>
+
+              <img src="./images/bg_1.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <div class="slide_text" id="slide_text_2">
+                <h3>Meet Surface Laptop</h3>
+                <p>
+                  Unlock AI features like Live Captions and Cocreator with this
+                  exceptionally powerful laptop.
+                </p>
+                <button>Learn more</button>
+              </div>
+              <img src="./images/bg_2.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <i class="ri-pause-circle-line" id="pause_icon"></i>
+          <i class="ri-pause-circle-fill" id="pause_icon_fill"></i>
+          <i class="fa-sharp fa-solid fa-angle-left fa-2xs" id="left_arrow"></i>
+          <div class="bar active" data-index="0"></div>
+          <div class="bar" data-index="1"></div>
+          <i
+            class="fa-sharp fa-solid fa-angle-right fa-2xs"
+            id="right_arrow"
+          ></i>
+        </div>
+        <div class="icon_layer">
+          <div class="icon_box">
+            <img src="./images/window_icon.svg" alt="" />
+            <a href="#">Choose your Microsoft 365</a>
+          </div>
+          <div class="icon_box">
+            <img src="./images/xbox_icon.svg" alt="" />
+            <a href="#">Shop Xbox</a>
+          </div>
+          <div class="icon_box">
+            <img src="./images/window_icon.svg" alt="" />
+            <a href="#">Get Windows 11</a>
+          </div>
+          <div class="icon_box">
+            <img src="./images/device_icon.svg" alt="" />
+            <a href="#">Explore Surface devices</a>
+          </div>
+        </div>
+      </section>
+      <section id="section_2">
+        <div class="section_2_container">
+          <div class="product_boxes">
+            <img src="./images/product_1.jpeg" alt="" />
+            <div class="product_info">
+              <h3>Surface Pro, Copilot+ PC</h3>
+              <p>
+                This laptop's unrivalled flexibility and AI features like
+                Cocreator, enable you to do more than you ever imagined.
+              </p>
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class="product_boxes">
+            <img src="./images/product_2.jpeg" alt="" />
+            <div class="product_info">
+              <h3>Copilot is your AI companion</h3>
+              <p>
+                Always by your side, ready to support you whenever and wherever
+                you need it.
+              </p>
+              <button>Download the Copilot app</button>
+            </div>
+          </div>
+          <div class="product_boxes">
+            <img src="./images/product_3.jpeg" alt="" />
+            <div class="product_info">
+              <h3>Xbox Series S</h3>
+              <p>performance in the smallest Xbox ever</p>
+              <button>Shop Xbox Series S</button>
+            </div>
+          </div>
+          <div class="product_boxes">
+            <img src="./images/product_4.jpeg" alt="" />
+            <div class="product_info">
+              <h3>Xbox Series X</h3>
+              <p>The fastest, most powerful Xbox ever.</p>
+              <button>Shop Xbox Series X</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const slides = document.querySelector(".slides");
+      const bars = document.querySelectorAll(".bar");
+      const left_arrow = document.getElementById("left_arrow");
+      const right_arrow = document.getElementById("right_arrow");
+      let index = 0;
+      const totalSlides = bars.length;
+
+      function showSlide(i) {
+        index = i;
+        slides.style.transform = `translateX(${-index * 100}%)`;
+        bars.forEach((bar) => bar.classList.remove("active"));
+        bars[index].classList.add("active");
+      }
+
+      function autoSlide() {
+        index = (index + 1) % totalSlides;
+        showSlide(index);
+      }
+
+      let slideInterval = setInterval(autoSlide, 40000);
+
+      // bars.forEach((bar) => {
+      //   bar.addEventListener("click", () => {
+      //     clearInterval(slideInterval);
+      //     showSlide(parseInt(bar.dataset.index));
+      //     slideInterval = setInterval(autoSlide, 40000);
+      //   });
+      // });
+
+      // Handle left arrow click
+      left_arrow.addEventListener("click", () => {
+        clearInterval(slideInterval);
+        index = (index - 1 + totalSlides) % totalSlides;
+        showSlide(index);
+        slideInterval = setInterval(autoSlide, 40000);
+      });
+
+      // Handle right arrow click
+      right_arrow.addEventListener("click", () => {
+        clearInterval(slideInterval);
+        index = (index + 1) % totalSlides; // go right
+        showSlide(index);
+        slideInterval = setInterval(autoSlide, 40000);
+      });
+    </script>
+  </body>
+</html>
