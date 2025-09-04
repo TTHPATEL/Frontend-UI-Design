@@ -5,6 +5,12 @@
   font-family: "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 }
+:root {
+  --padding-inline: 2.5vw 5vw 2.5vw 5vw;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100vh;
 }
@@ -74,15 +80,15 @@ body {
   font-size: 0.815em;
 }
 .avatar {
-  min-width: 40%;
-  max-height: 65%;
+  min-width: 45%;
+  max-height: 80%;
   border-radius: 50%;
 }
 
 /* SLIDER */
 #section_1 {
   height: calc(100vh - 62.325px);
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,6 +140,7 @@ body {
   border: none;
   font-size: 1em;
   font-weight: 500;
+  cursor: pointer;
 }
 .slide img {
   width: 50%;
@@ -208,6 +215,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.6em;
+  cursor: pointer;
 }
 .icon_box img {
   width: 2.5em;
@@ -227,8 +235,9 @@ body {
 
 .section_2_container {
   display: flex;
-  gap: 1.2em;
   padding: 2.5vw 5vw 4vw 5vw;
+  gap: 1.5em;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .product_boxes {
@@ -236,6 +245,7 @@ body {
   max-width: 20.182em;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   /* max-height: 28.182em; */
   /* height: 28em; */
 }
@@ -265,4 +275,184 @@ body {
   font-weight: 500;
   background-color: rgb(0, 103, 184);
   margin-top: auto;
+  cursor: pointer;
+}
+
+/* SECTION 3 XBOX GAME PASS */
+
+#xbox_game_pass {
+  min-height: 40vh;
+}
+.xbox_container {
+  padding: var(--padding-inline);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.xbox_container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.img_text {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  padding: 5.333vw;
+  gap: 1.5em;
+}
+
+.img_text h3 {
+  font-size: 2.569vw;
+  font-weight: 500;
+}
+.img_text p {
+  line-height: 1.5em;
+}
+.img_text button {
+  font-size: 1em;
+  padding: 0.625em 0.75em;
+  background-color: rgb(0, 103, 184);
+  color: white;
+  border-color: rgba(0, 0, 0, 0);
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+/* SECTION 4 business */
+#business {
+  min-width: 100vh;
+}
+.business_contianer {
+  padding: var(--padding-inline);
+  display: flex;
+  flex-direction: column;
+}
+
+.business_box_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+.business_contianer h2 {
+  font-size: 2.35vw;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+.business_boxes_card {
+  box-shadow: -2px 4px 4px rgb(220, 220, 220), 2px 0 4px rgb(220, 220, 220);
+  max-width: 20.182em;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.business_boxes_card img {
+  width: 100%;
+  object-fit: contain;
+}
+.business_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2em;
+  padding: 1.5em;
+  flex: 1;
+}
+.business_boxes_card h3 {
+  font-size: 1.813em;
+  font-weight: 500;
+}
+.business_info button {
+  font-size: 1em;
+  padding: 0.625em 0.75em;
+  text-align: start;
+  margin-top: auto;
+  color: white;
+  border: 1.6px solid;
+  font-weight: 500;
+  background-color: rgb(0, 103, 184);
+  margin-top: auto;
+  cursor: pointer;
+}
+.new_label {
+  height: 2vw;
+  margin-bottom: -1.25em;
+  margin-top: -0.5em;
+}
+.new_label h4 {
+  padding: 0.18vw 0.833vw;
+  background-color: rgb(255, 185, 0);
+  font-weight: 600;
+}
+
+/* Social Follow */
+.social_follow {
+  min-height: 32vh;
+  background-color: rosybrown;
+}
+.social_follow_container {
+  display: flex;
+  align-items: center;
+
+  padding-inline: 5vw;
+  margin-block: 5vw;
+  gap: 2em;
+}
+.social_follow_container h2 {
+  font-size: 1em;
+  font-weight: 400;
+  /* background-color: rosybrown; */
+}
+
+.social_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.social_icon i {
+  font-size: 1.7em;
+  cursor: pointer;
+}
+#youtube {
+  font-size: 1.9em;
+}
+/* Footer */
+
+footer {
+  min-height: 40vh;
+  background-color: rgb(243, 243, 243);
+}
+
+.back_to_top {
+  background-color: rgb(210, 210, 210);
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 10px 12px;
+  display: flex;
+  gap: 0.7em;
+  position: fixed;
+  bottom: 1.5%;
+  right: 1%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.back_to_top:hover {
+  background-color: white;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.15);
+}
+.back_to_top.show {
+  opacity: 1;
+  pointer-events: auto;
 }

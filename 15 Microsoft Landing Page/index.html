@@ -19,7 +19,7 @@
     <nav id="navigation">
       <div class="nav_container">
         <div class="left_menu_list">
-          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+          <a href="#business"><img src="./images/logo.png" alt="logo" /></a>
           <div class="left_menu_item_text">
             <div class="left_menu_item"><p>Microsoft 365</p></div>
             <div class="left_menu_item"><p>Teams</p></div>
@@ -153,7 +153,101 @@
           </div>
         </div>
       </section>
+      <section id="xbox_game_pass">
+        <div class="xbox_container">
+          <img src="./images/gamepass_bg.jpeg" alt="" />
+          <div class="img_text">
+            <h3>Xbox Game Pass Ultimate</h3>
+            <p>
+              Play new titles on day one. Enjoy hundreds of high-quality games
+              with friends on console, PC or cloud.
+            </p>
+            <button>Join now</button>
+          </div>
+        </div>
+      </section>
+      <section id="business">
+        <div class="business_contianer">
+          <h2>For business</h2>
+          <div class="business_box_container">
+            <!-- BOX 1 -->
+            <div class="business_boxes_card">
+              <img src="./images/bussiness_prod_1.jpeg" alt="" />
+              <div class="business_info">
+                <div class="new_label"><h4>New</h4></div>
+                <h3>Surface Pro for Business, Copilot+ PC | Intel</h3>
+                <p>
+                  Ultra-versatile and built with Intel® Core™ Ultra processors
+                  (Series 2) that power AI experiences to amplify your team’s
+                  productivity
+                </p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <!-- BOX 2 -->
+            <div class="business_boxes_card">
+              <img src="./images/bussiness_prod_2.jpeg" alt="" />
+              <div class="business_info">
+                <div class="new_label"></div>
+
+                <h3>Microsoft 365 Copilot</h3>
+                <p>
+                  Save time and focus on the things that matter most with AI in
+                  Microsoft 365 for business.
+                </p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <!-- BOX 3 -->
+            <div class="business_boxes_card">
+              <img src="./images/bussiness_prod_3.jpeg" alt="" />
+              <div class="business_info">
+                <div class="new_label"></div>
+
+                <h3>Get Microsoft Teams for your business</h3>
+                <p>
+                  Online meetings, chat, real-time collaboration, and shared
+                  cloud storage all in one place
+                </p>
+                <button>Find the right plan for your business</button>
+              </div>
+            </div>
+            <!-- BOX 4 -->
+            <div class="business_boxes_card">
+              <img src="./images/bussiness_prod_4.jpeg" alt="" />
+              <div class="business_info">
+                <div class="new_label"></div>
+
+                <h3>20% off Windows 365</h3>
+                <p>
+                  Experience seamless productivity with Windows 365 Cloud PC –
+                  delivering the full Windows experience on any device. Learn
+                  more
+                </p>
+                <button>Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="social_follow">
+        <div class="social_follow_container">
+          <h2>Follow Microsoft</h2>
+          <div class="social_icon">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-twitter-x-fill"></i>
+            <i id="youtube" class="ri-youtube-fill"></i>
+          </div>
+          <a href="#navigation" class="back_to_top">
+            <i class="ri-arrow-up-line"></i> <small>Back to top</small>
+          </a>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer_container"></div>
+    </footer>
+
     <script>
       const slides = document.querySelector(".slides");
       const bars = document.querySelectorAll(".bar");
@@ -198,6 +292,20 @@
         index = (index + 1) % totalSlides; // go right
         showSlide(index);
         slideInterval = setInterval(autoSlide, 40000);
+      });
+
+      // SCROLL TO TOP BUTTON
+      const backToTop = document.querySelector(".back_to_top");
+      const section_2 = document.querySelector("#section_2");
+
+      window.addEventListener("scroll", () => {
+        const rect = section_2.getBoundingClientRect();
+
+        if (rect.top <= 0) {
+          backToTop.classList.add("show"); // show
+        } else {
+          backToTop.classList.remove("show"); // hide
+        }
       });
     </script>
   </body>
