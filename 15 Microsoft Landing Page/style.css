@@ -7,6 +7,8 @@
 }
 :root {
   --padding-inline: 2.5vw 5vw 2.5vw 5vw;
+  --mobile-padding-inline: 2.5vw 2.5vw 2.5vw 2.5vw;
+  --padding-left_right: 5vw 5vw;
 }
 html {
   scroll-behavior: smooth;
@@ -19,7 +21,6 @@ body {
 }
 .nav_container {
   overflow: hidden;
-
   /* background-color: aqua; */
   height: 5.7vh;
   display: flex;
@@ -93,16 +94,14 @@ body {
 /* SLIDER */
 #section_1 {
   min-height: calc(100vh - 62.325px);
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .slider {
-  /* position: relative; */
   width: 100%;
-  /* height: 63.5vh; */
+  /* height: 63.5vh  ; */
   overflow: hidden;
 }
 
@@ -117,6 +116,11 @@ body {
   width: 100%;
   flex-shrink: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.mobile_bg {
+  display: none;
 }
 
 .slide_text {
@@ -159,10 +163,6 @@ body {
 }
 /* RADIO BUTTON */
 .navigation {
-  position: absolute;
-  top: 72.5%;
-  left: 49.5%;
-  transform: translateX(-50%);
   display: flex;
   gap: 2em;
   overflow: visible;
@@ -212,6 +212,7 @@ body {
   display: flex;
   gap: 2em;
   padding-bottom: 2em;
+  flex-wrap: wrap;
 }
 .icon_box {
   padding: 10px;
@@ -235,7 +236,6 @@ body {
 /* SECTION 2 */
 #section_2 {
   min-height: 70vh;
-  /* background-color: antiquewhite; */
 }
 
 .section_2_container {
@@ -404,10 +404,10 @@ body {
 .social_follow_container {
   display: flex;
   align-items: center;
-
   padding-inline: 5vw;
   margin-block: 5vw;
   gap: 2em;
+  flex-wrap: wrap;
 }
 .social_follow_container h2 {
   font-size: 1em;
@@ -430,7 +430,7 @@ body {
 }
 
 /* BACK TO UP */
-/* .back_to_top {
+.back_to_top {
   background-color: rgb(210, 210, 210);
   text-decoration: none;
   color: black;
@@ -456,7 +456,7 @@ body {
 .back_to_top.show {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 
 /* Footer */
 
@@ -481,6 +481,7 @@ footer {
 .footer_item_container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer_item ul li {
   border-bottom: 1px solid rgb(243, 243, 243);
@@ -581,5 +582,134 @@ footer {
   }
   .mobile_right_menu_list i {
     font-size: 1.2em;
+  }
+  /* .slider {
+    height: 61.5vh;
+  } */
+
+  .desktop_bg {
+    display: none;
+  }
+  .mobile_bg {
+    display: block;
+  }
+  #section_1 {
+    gap: 2em;
+  }
+  .slide_text {
+    position: static;
+    padding: 7vw 5vw 11vw 5vw;
+  }
+
+  .slide_text h3 {
+    font-size: 1.82em;
+    font-weight: 500;
+  }
+  .slide_text p {
+    max-width: 21.5em;
+    line-height: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+  }
+  .slide_text h3 {
+    font-size: 1.82em;
+    font-weight: 500;
+  }
+  .slide_text button {
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .slide {
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* sharp bottom line */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* blurred bottom line */
+  }
+  .slide img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .icon_layer {
+    justify-content: space-around;
+    padding-inline: 2.5vw;
+  }
+  .section_2_container {
+    padding: var(--mobile-padding-inline);
+    gap: 2.5em;
+  }
+  .product_boxes {
+    max-width: 100%;
+  }
+
+  /* SECTION 3 XBOX GAME */
+
+  .xbox_container {
+    padding: var(--mobile-padding-inline);
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .img_text {
+    position: static;
+    color: rgb(0, 0, 0);
+    max-width: 100%;
+    padding: 5.333vw;
+    margin-block: 1em;
+  }
+
+  .img_text h3 {
+    font-size: 5.647vw;
+  }
+  .img_text p {
+    margin-top: -0.5em;
+  }
+
+  /* SECTION 4 BUSINESS */
+  .business_contianer h2 {
+    font-size: 5.647vw;
+  }
+  .business_contianer {
+    padding: var(--mobile-padding-inline);
+  }
+  .business_boxes_card {
+    max-width: 100%;
+  }
+  .business_box_container {
+    gap: 2.5em;
+  }
+
+  .new_label {
+    height: 8.784vw;
+  }
+  .new_label h4 {
+    padding: 1.412vw 2.824vw;
+  }
+  .business_info h3 {
+    font-size: 4.941vw;
+  }
+  .business_info p {
+    margin-top: -0.5em;
+  }
+
+  .footer_item {
+    padding-top: 2.2em;
+  }
+
+  .left_footer,
+  .right_footer {
+    gap: 1em;
+    justify-content: start;
+  }
+
+  /* BACK TO UP */
+  .back_to_top {
+    position: static;
   }
 }
