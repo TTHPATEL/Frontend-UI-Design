@@ -11,7 +11,7 @@
 body {
   background-color: rgb(53, 51, 51);
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   gap: 1rem;
   background-color: rgb(183, 121, 98);
   padding: 20px;
-  width: 50%;
+  width: 80%;
   border-radius: 5px;
   max-width: 600px;
 }
@@ -53,6 +53,7 @@ h1 {
 #search_btn {
   padding: 0.4rem;
   border-radius: 5px;
+  min-width: 17%;
 }
 /* .stats_container {
   display: hidden;
@@ -88,3 +89,41 @@ h1 {
 /* .hide {
   display: none;
 } */
+.stats_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+.card {
+  height: 7em;
+  width: 10em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  background-color: rgb(156, 92, 68);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5em;
+}
+
+@media (max-width: 816px) {
+  .user_input_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .user_container p {
+    text-align: center;
+  }
+  .card {
+    width: 15em;
+  }
+}

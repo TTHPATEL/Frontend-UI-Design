@@ -28,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateProgress(solved, totalSolved, label, circle) {
     const percentage = (solved / totalSolved) * 100;
     circle.style.setProperty("--progress_degree", `${percentage}%`);
-
-    label.textContent = `${solved}/${totalSolved}${label.textContent}`;
+    label.textContent = `${solved}/${totalSolved}`;
   }
 
   function displayUserData(data) {
@@ -42,6 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalMedium = data.totalMedium;
     const hardSolved = data.hardSolved;
     const totalHard = data.totalHard;
+    const ranking = data.ranking;
+    const acceptanceRate = data.acceptanceRate;
+    const reputation = data.reputation;
+    const contributionPoints = data.contributionPoints;
 
     updateProgress(easySolved, totalEasy, easyLabel, easyProgressCircle);
     updateProgress(
@@ -51,6 +54,49 @@ document.addEventListener("DOMContentLoaded", function () {
       mediumProgressCircle
     );
     updateProgress(hardSolved, totalHard, hard_label, hardProgressCircle);
+    const statsData = [
+      {
+        label: "Ranking",
+        value: ranking,
+      },
+      {
+        label: "Total Solved",
+        value: totalSolved,
+      },
+      {
+        label: "Total Questions",
+        value: totalQuestions,
+      },
+      {
+        label: "Acceptance Rate ",
+        value: acceptanceRate,
+      },
+      {
+        label: "Reputation ",
+        value: reputation,
+      },
+      {
+        label: "Contribution Points",
+        value: contributionPoints,
+      },
+    ];
+
+    // cardStatsContainer.innerHTML = statsData
+    //   .map((data) => {
+    //     return `<div class="card">
+    //   <h3>${data.label}</h3>
+    //   <p>${data.value}</p>
+    //   <div>`;
+    //   })
+    //   .join("");
+    cardStatsContainer.innerHTML = statsData
+      .map((data) => {
+        return `<div class="card">
+            <h3>${data.label}</h3>
+            <p>${data.value}</p>
+          </div>`;
+      })
+      .join("");
   }
   // cpcs
   async function fetchUserDetails(username) {
@@ -58,10 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
       searchButton.textContent = "Searching...";
       searchButton.disabled = true;
-      console.log(statsContainer.classList);
-
-      console.log(statsContainer.classList.toggle("hide"));
-      console.log(statsContainer.classList);
 
       //   stats_container.classList.add("hiddessn");
       const response = await fetch(url);
